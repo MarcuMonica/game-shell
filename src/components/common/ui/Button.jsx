@@ -13,5 +13,9 @@ export const Button = ({
 }) => {
   const Element = element;
 
-  return <Element {...props} className={skins[skin]}>{children}</Element>;
+  return (
+    <Element {...props} className={skins[skin]}>
+      {children}
+    </Element>
+  );
 };
